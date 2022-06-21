@@ -150,7 +150,7 @@ if __name__ == '__main__':
     page = 'https://www.ptt.cc/bbs/Beauty/index3984.html' # 指定頁面
     page = 'https://www.ptt.cc/bbs/sex/index3984.html' #也可以爬其他版
 
-    for p in range(3995, 3900, -1):
+    for p in range(3995, 3900, -1): # 0621時，表特版最新那頁的index=3995，很有野心的往前爬95頁
         page = f'https://www.ptt.cc/bbs/Beauty/index{p}.html'
         arts = get_articles_inPage(session, page)
         for art in arts:
